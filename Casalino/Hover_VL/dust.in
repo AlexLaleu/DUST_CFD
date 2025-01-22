@@ -1,0 +1,59 @@
+basename       = ./output/TUD
+debug_level = 1
+
+! free-stream conditions ---------------
+u_inf   = (/ 0.0 , 0.0 , 0.0 /)	
+u_ref = 78.539816
+P_inf = 101151.9446
+rho_inf = 1.22
+a_inf = 340.6992838
+mu_inf = 1.81e-5
+
+! Time ---------------------------------
+tstart = 0.0
+tend =	0.072 ! 6 rev (tester tend /tstart, aller jusqu'à 10 ou 20 rev)
+dt = 0.0002
+dt_out = 0.0002
+output_start = T
+
+restart_from_file = F
+restart_file = ./output/TUD_res_0331.h5
+reset_time = F
+
+! geometry -----------------------------
+GeometryFile = geo_input.h5
+
+! reference frames ---------------------
+ReferenceFile = ./References.in
+
+! Model parameters ---------------------
+FMM = T
+Vortstretch = T                          
+Diffusion = T
+PenetrationAvoidance = T
+rankine_rad = 0.0032
+vortex_rad = 0.0011
+cutoff_rad = 0.0001
+
+
+! wake parameters ----------------------
+n_wake_panels = 2
+n_wake_particles = 1000000
+particles_box_min = (/ -0.3, -0.3, -3.4/)
+particles_box_max = (/  0.3,  0.3, 0.1/)	!modificato nico
+
+refine_wake = F
+k_refine = 1
+
+! octree parameters--------------------
+BoxLength = 1.2
+NBox = (/1,1,3/)
+OctreeOrigin = (/-0.6, -0.6, -3.4/)
+NOctreeLevels = 6
+MinOctreePart = 8
+MultipoleDegree = 2
+
+! lifting lines solver-----------------
+LLtol = 1.0e-4
+LLMaxIter = 400
+

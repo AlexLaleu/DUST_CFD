@@ -1,0 +1,111 @@
+mesh_file_type = parametric
+el_type = v
+starting_point = (/0.0, 0.03, 0.0/)
+reference_chord_fraction = 0.25
+nelem_chord = 12
+type_chord = uniform
+
+!Section 1
+chord = 0.0274
+twist = 43.8
+airfoil = NACA4412
+
+!Region 1
+span = 0.015
+sweep = 0
+dihed = 0
+nelem_span = 7
+type_span = uniform
+
+!Section 2
+chord = 0.0328
+twist = 35.4
+airfoil = NACA4412
+
+!Region 2
+span = 0.015
+sweep = 0
+dihed = 0
+nelem_span = 7
+type_span = uniform
+
+!Section 3
+chord = 0.0345
+twist = 28.1
+airfoil = NACA4412
+
+!Region 3
+span = 0.015
+sweep = 0
+dihed = 0
+nelem_span = 7
+type_span = uniform
+
+!Section 4
+chord = 0.0333
+twist = 23
+airfoil = NACA4412
+
+!Region 4
+span = 0.015
+sweep = 0
+dihed = 0
+nelem_span = 7
+type_span = uniform
+
+!Section 5
+chord = 0.0301
+twist = 19.7
+airfoil = NACA4412
+
+!Region 5
+span = 0.015
+sweep = 0
+dihed = 0
+nelem_span = 7
+type_span = uniform
+
+!Section 6
+chord = 0.0257
+twist = 16.9
+airfoil = NACA4412
+
+!Region 6
+span = 0.015
+sweep = 0
+dihed = 0
+nelem_span = 7
+type_span = uniform
+
+!Section 7
+chord = 0.0209
+twist = 14.9
+airfoil = NACA4412
+
+!Region 7
+span = 0.015
+sweep = 0
+dihed = 0
+nelem_span = 7
+type_span = uniform
+
+!Section 8
+chord = 0.0154
+twist = 13.2
+airfoil = NACA4412
+
+!Region 8
+span = 0.015
+sweep = 0
+dihed = 0
+nelem_span = 7
+type_span = uniform
+
+!Section 9
+chord = 0.01
+twist = 12.3
+airfoil = NACA4412
+
+
+
+

@@ -1,0 +1,25 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Reference_Tag = Rotor
+Parent_Tag = 0
+Origin = (/0.0, 0.0, 0.0/)
+Orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+Multiple = T
+Moving = F
+
+multiplicity = {
+  mult_type = rotor 
+  n_blades = 3
+  rot_axis = (/0.0,0.0,1.0/)
+  rot_rate = 523.599      ! 5000 RPM
+  psi_0 = 0.0
+  hub_offset = 0.0
+
+  n_dofs = 1
+  dof = {
+    hinge_type = Pitch
+    hinge_offset = (/ 0.0 , 0.0 , 0.0 /)
+    Collective  =  0.0     ! deg
+    cyclic_ampl =  0.0     ! deg
+    cyclic_phas =  0.0     ! deg
+  }
+}
