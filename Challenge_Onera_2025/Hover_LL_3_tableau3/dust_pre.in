@@ -1,0 +1,10 @@
+! Components -------------------
+
+CompName = Wing                   
+GeoFile = ll_wing.in         
+RefTag = Rotor                                                        
+
+! .hdf5 geometry file ----------
+FileName = ./geo_input.h5
+
+

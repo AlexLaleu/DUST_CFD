@@ -1,0 +1,85 @@
+data_basename = ./output/TUD
+basename =     ./resultats_ 8000RPM/TUD
+
+analysis= {
+type=viz
+name = viz
+start_res=301
+end_res=361
+step_res=1
+format=vtk
+variable=pressure
+variable=velocity
+variable=surface_velocity
+wake = T
+}
+
+analysis = {
+    type = sectional_loads
+    name = blade1
+    start_res = 300
+    end_res = 361
+    step_res = 1
+    format = dat
+    average = F
+
+    component = Wing__01
+
+    axis_nod = (/ 0.0, 0.0, 0.0 /)
+    axis_dir = (/ 0.0, 1.0, 0.0 /)
+
+    lifting_line_data = T
+    vortex_lattice_data = F
+}
+
+analysis = {
+    type = sectional_loads
+    name = blade2
+    start_res = 300
+    end_res = 361
+    step_res = 1
+    format = dat
+    average = F
+
+    component = Wing__02
+
+    axis_nod = (/ 0.0, 0.0, 0.0 /)
+    axis_dir = (/ 0.0, 1.0, 0.0 /)
+
+    lifting_line_data = T
+    vortex_lattice_data = F
+}
+
+analysis = {
+    type = sectional_loads
+    name = blade3
+    start_res = 300
+    end_res = 361
+    step_res = 1
+    format = dat
+    average = F
+
+    component = Wing__03
+
+    axis_nod = (/ 0.0, 0.0, 0.0 /)
+    axis_dir = (/ 0.0, 1.0, 0.0 /)
+
+    lifting_line_data = T
+    vortex_lattice_data = F
+}
+
+!------------------------------------------------
+
+!analysis = {
+type = flow_field
+name = ff01
+start_res = 400
+end_res = 481
+step_res = 1
+format = vtk
+average = T 
+variable = Velocity
+n_xyz = (/ 100, 1, 100 /)
+min_xyz = (/ 0.0, 0.0, -0.3 /)
+max_xyz = (/ 0.3, 0.0, 0.1 /)
+}
